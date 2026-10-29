@@ -1,0 +1,32 @@
+/* のびーるネコのサポートサイト。ゲームと同じ、夕焼けの空と夜の屋根の色。
+   作りは つみつみネコタワー（/nekotower/）のサポートサイトとそろえている。 */
+:root{
+  --dusk:#ffd2b8; --paper:#fff8f3; --line:#f3d3c2; --ink:#2b2440; --muted:#6f6380; --accent:#e0405a; --roof:#2b2440;
+  --display:'Rampart One','Hiragino Sans','Yu Gothic',sans-serif;
+  --round:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN','Hiragino Sans','Yu Gothic',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(var(--dusk),var(--paper) 320px);background-color:var(--paper);color:var(--ink);font-family:var(--round);font-weight:500;line-height:1.85;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:32px 64px}
+header{display:flex;align-items:center;gap:16px;padding-bottom:24px;border-bottom:2px dashed var(--line);margin-bottom:28px}
+header img{width:72px;height:72px;border-radius:18px;box-shadow:0 4px 0 var(--line)}
+header .name{font-family:var(--display);font-size:28px;line-height:1.25}
+header .sub{color:var(--muted);font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:28px;font-size:14px}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1{font-weight:800;font-size:24px;margin:0 0 8px;text-wrap:balance}
+h2{font-weight:800;font-size:18px;margin:36px 0 8px;padding-top:4px;text-wrap:balance}
+p,li,dd{max-width:65ch}
+ul,ol{padding-left:1.3em}
+.meta{color:var(--muted);font-size:14px}
+.card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin:16px 0}
+.howto{background:var(--roof);color:#fffaf3;border-radius:16px;padding:16px 20px 16px 2.6em;margin:16px 0}
+.howto li{margin:4px 0}
+.howto b{color:#ffe08a}
+footer{margin-top:48px;padding-top:20px;border-top:2px dashed var(--line);color:var(--muted);font-size:13px}
+dt{font-weight:800;margin-top:16px}
+dd{margin:4px 0 0}
+.store{display:inline-block;background:var(--roof);color:#fffaf3;text-decoration:none;font-weight:800;border-radius:12px;padding:10px 18px}
+.store:hover{opacity:.9}
